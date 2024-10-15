@@ -1,0 +1,107 @@
+/* Footer Styles */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #ff8000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #ff8000;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+.navbar-brand {
+  text-decoration: none;
+  color: white;
+}
+.nav-link {
+  color: black;
+  padding: 1px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.search-box {
+  width: 500px;
+  display: flex;
+  border: 2px solid #ff8000;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search-box button {
+  background-color: #ff8000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+.search-box button:hover {
+  background-color: #e67000;
+}

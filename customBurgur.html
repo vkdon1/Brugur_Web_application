@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brrrgrrr - Customize Your Burger</title>
+    <link rel="stylesheet" href="CustemBurgur.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi6832y-IAhephWzwnm1hZ_6hgwwFKhnbrQ&s"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to BrrrGrrr</h1>
+      <h2>Create Your Own Burger</h2>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+      <h3>Choose Your Ingredients:</h3>
+      <button onclick="addIngredient('Lettuce')">Lettuce</button>
+      <button onclick="addIngredient('Tomato')">Tomato</button>
+      <button onclick="addIngredient('Cheese')">Cheese</button>
+      <button onclick="addIngredient('Chicken Patty')">Chicken Patty</button>
+      <button onclick="addIngredient('Pickles')">Pickles</button>
+    </div>
+
+    <!-- Burger Display Section -->
+    <div class="burger-display">
+      <h3>Your Burger:</h3>
+      <div id="burger"></div>
+      <!-- This is where ingredients will be added -->
+      <button class="clear-button" onclick="clearBurger()">Clear Burger</button>
+    </div>
+
+    <div class="burger-display ingredients-section">
+      <a href="payment.html"
+        ><button onclick="alert('we redirecting tou to the payment page')">
+          Place Order
+        </button></a
+      >
+    </div>
+    <script src="customBurgur.js"></script>
+  </body>
+</html>

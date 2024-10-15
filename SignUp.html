@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Form</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi6832y-IAhephWzwnm1hZ_6hgwwFKhnbrQ&s"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        color: #444;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f9fafb;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #4f46e5;
+        background-color: #ffffff;
+        box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4f46e5;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #4338ca;
+      }
+
+      .form-footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .form-footer a {
+        color: #4f46e5;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .form-footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+    <form action="/submit-form" method="POST">
+      <h1>Submit Your Information</h1>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+
+      <div class="form-footer">
+        <p>Already have an account? <a href="MainLogin.html">Sign In</a></p>
+      </div>
+    </form>
+  </body>
+</html>

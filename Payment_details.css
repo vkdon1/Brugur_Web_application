@@ -1,0 +1,48 @@
+/* Body background refinement */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e0e7ff; /* A softer blue for a cleaner look */
+  color: #343a40; /* Darker text for better readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack heading and content vertically */
+  height: 100vh;
+  padding: 20px;
+}
+.table {
+  background-color: #f8f9fa; /* A softer off-white for the table */
+  border-radius: 10px; /* Round corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto; /* Centering the table */
+}
+/* Refined styles for the main heading */
+.heading {
+  text-align: center;
+  margin-bottom: 30px; /* Add space below the heading */
+  padding: 15px 0; /* More padding to give it room */
+  background-color: #007bff; /* Blue background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 80%; /* Width constraint for better fit */
+  max-width: 700px; /* Maximum width for larger screens */
+  margin-left: auto;
+  margin-right: auto; /* Center align the div */
+}
+
+.heading h1 {
+  font-size: 2rem; /* Decrease font size for better balance */
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.5px; /* Space out the letters more */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading h1:hover {
+  color: #f8f9fa; /* Slightly lighter on hover */
+  transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,72 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.ingredients-section {
+  text-align: center;
+  margin: 30px 0;
+}
+.ingredients-section button {
+
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.ingredients-section button:hover {
+  background-color: #ff4e4e;
+  transform: translateY(-2px);
+}
+.burger-display {
+
+  text-align: center;
+  margin: 40px 0;
+}
+.burger-display img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.burger-display img:hover {
+  transform: scale(1.05);
+}
+.clear-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+.clear-button:hover {
+  background-color: #ff4e4e;
+  transform: translateY(-2px);
+}

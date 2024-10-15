@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brrrgrrr</title>
+    <link rel="stylesheet" href="Home.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi6832y-IAhephWzwnm1hZ_6hgwwFKhnbrQ&s"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+      <link
+        href="/your-path-to-fontawesome/css/custom-icons.css"
+        rel="stylesheet"
+      />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm p-3 mb-5 bg-body-tertiary rounded border border-blac">
+        <div class="container-fluid">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gUqWrlkJa0i5qUyA4_kuNGLcItUah2UIPw&s" alt="Logo" width="35" height="29" class="d-inline-block align-text-top">
+            BURRGURRR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainLogin.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                   
+                </li>
+                
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu">
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Customer Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Display_address.html">Customer Details</a>
+                        </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="CustomerOrderDetails.html">Customer Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Payment_details.html">Payment Details</a>
+                    </li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+                <a href="customBurgur.html"><button class="btn btn-primary" type="button">Custom Burgur</button></a>
+                    <a href="index.html"> <button class="btn btn-primary" type="button">Logout</button></a>
+              </div>
+        </div>
+        
+    </nav>
+    
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search for burgers" />
+            <button type="submit">Search</button>
+        </div>
+    </div>
+
+      
+        <br>
+        
+        
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Launch static backdrop modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Confirm Your Order</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Burger Details will be inserted here -->
+                        <!-- <p id="burgerName" class="fw-bold">burgur</p>
+                        <p id="burgerIngredients">dvd</p>
+                        <p id="burgerPrice" class="text-success">12</p> -->
+                        <p>Are you sure you want to order this burger?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmOrder()">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cards -->
+        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <div class="container text-center">
+                <div class="row row-cols-4">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/b13811eeee71e578bc6ca89eca0ec87f" class="card-img-top" alt="..." height="=200px">
+                            <div class="card-body">
+                                <h5 class="card-title">Philly Burgers
+                                </h5>
+                                <p class="card-text">
+                                Crispy vegetable patty, topped with veggies, special creamy mayo.</p>
+                                <a href="#" class="btn btn-primary">RS149/-</a>
+                                <!-- Order Now Button -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Philly Burgers', 149)">
+                                 Order Now
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/6/21/2cf63c01-fef1-49b6-af70-d028bc79be7b_bfe88b73-33a9-489c-97f3-fb24631de1fc.png" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title">Monterey Jack</h5>
+                                <p class="card-text">Monterey Jack is perfect for a super-gooey cheese sauce</p>
+                                <a href="#" class="btn btn-primary">RS 449/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Philly Burgers', 449)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/4/19/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.jpg" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title">Parmigiano-Reggiano</h5>
+                                <p class="card-text">Reggiano cheese into the ground beef chuck, scallions</p>
+                                <a href="#" class="btn btn-primary">RS 239/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Parmigiano-Reggiano', 229)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/7/3/6f8f8361-31b2-475b-b329-dff5f417a55d_a875ba2c-2107-4d4e-82a3-4ed3c4cdee0e.JPG" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title">Crispy Veg Burger</h5>
+                                <p class="card-text">Masaledar Veg Patty, Onion & Our Signature Tomato Herby Sauce. Qty: 137 Gms</p>
+                                <a href="#" class="btn btn-primary">RS 79/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Crispy Veg Burger', 79)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container text-center">
+                <div class="row row-cols-4">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6ec46f97fd143d17d373a72ea9b36ac6" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title"> Crunchy Paneer Burger</h5>
+                                <p class="card-text">
+                                    Homemade paneer patty, fried to perfection, dressed with in-house blend of mayo
+                                    </p>
+                                <a href="#" class="btn btn-primary">RS 199/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Crunchy Paneer Burger', 199)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/3/15/1ddeb06a-e518-4b3c-8a8a-3bdae2513fbc_69669c46-b68e-4c2b-8e74-42fafd8412bb.jpg" class="card-img-top" alt="..." height="180px">
+                            <div class="card-body">
+                                <h5 class="card-title">Tandoori Chicken Burge</h5>
+                                <p class="card-text">Monterey Jack is perfect for a super-gooey cheese sauce</p>
+                                <a href="#" class="btn btn-primary">RS 449/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Tandoori Chicken Burge', 449)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/21/0afddda3-b5df-4ab6-a4b8-901bcd37202f_bded6a3a-e583-4c31-87b9-17e2f27f5b4a.png" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title">Monterey Jack</h5>
+                                <p class="card-text">Double delight of a vegetable patty and potato patty topped </p>
+                                <a href="#" class="btn btn-primary">RS 449/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Monterey Jack', 449)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/4/b81027a4-9a1b-47b7-8ead-417307594da9_2ffc457e-2593-4d57-85d7-331aeb2ee523.png_compressed" class="card-img-top" alt="..." height="190px">
+                            <div class="card-body">
+                                <h5 class="card-title">American Supreme Veg Burger</h5>
+                                <p class="card-text">Monterey Jack is perfect for a super-gooey cheese sauce</p>
+                                <a href="#" class="btn btn-primary">RS 89/-</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('American Supreme Veg Burger', 89)">
+                                    Order Now
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="container text-center">
+                <div class="row row-cols-4">
+                  <div class="col"> <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/4/b81027a4-9a1b-47b7-8ead-417307594da9_2ffc457e-2593-4d57-85d7-331aeb2ee523.png_compressed" class="card-img-top" alt="..." height="190px">
+                        <div class="card-body">
+                            <h5 class="card-title">American Supreme Veg Burger</h5>
+                            <p class="card-text">Monterey Jack is perfect for a super-gooey cheese sauce</p>
+                            <a href="#" class="btn btn-primary">RS 89/-</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('American Supreme Veg Burger', 89)">
+                                Order Now
+                               </button>
+                        </div>
+                    </div>
+                </div></div>
+                  <div class="col"> <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/6/29/578ea9a0-29c0-4b57-a8ef-33159df01e3b_07cdfb8b-1905-44b9-ab17-d860e8889f1c.JPG" class="card-img-top" alt="..." height="190px">
+                        <div class="card-body">
+                            <h5 class="card-title">American Cheese Supreme Veg Burger</h5>
+                            <p class="card-text">Crispy veg patty, topped with veggies, pickled gherkin</p>
+                            <a href="#" class="btn btn-primary">RS 189/-</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('American Cheese Supreme Veg Burger', 189)">
+                                Order Now
+                               </button>
+                        </div>
+                    </div>
+                </div></div>
+                  <div class="col"> <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/6/21/06354d09-be1b-406c-86b5-49dc9b5062d1_2f80f39e-c951-4ca6-8fca-a243a18c3448.png" class="card-img-top" alt="..." height="190px">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Maharaja Mac Burger</h5>
+                            <p class="card-text">Savor our filling 11 layer burger! Double the indulgence with 2 corn & cheese patties, along with jalapeños, onion,etc</p>
+                            <a href="#" class="btn btn-primary">RS 224/-</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Veg Maharaja Mac Burger', 224)">
+                                Order Now
+                               </button>
+                        </div>
+                    </div>
+                </div></div>
+                  <div class="col"> <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/3/10/591c9373-5179-48e6-97a4-de60902f3117_35178c03-a100-43b1-a0ce-2e0fccf9e173_compressed" class="card-img-top" alt="..." height="190px">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Veg Burger</h5>
+                            <p class="card-text">A delicious veg patty seared on the outside but juicy on the inside dressed </p>
+                            <a href="#" class="btn btn-primary">RS 169/-</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal" onclick="addToOrder('Classic Veg Burger', 169)">
+                                Order Now
+                               </button>
+                        </div>
+                    </div>
+                </div></div>
+                </div>
+              </div>
+            </div>
+                    <div class="footer">
+            <div class="footer-container">
+                <!-- About Us Section -->
+                <div class="footer-section">
+                    <h3>About BrrrGrrr</h3>
+                    <p>Your go-to place for the juiciest, tastiest burgers. We are passionate about making happiness one bite at a time!</p>
+                </div>
+        
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Contact Us Section -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Burger St., Food City, FC 10001</p>
+                    <p>Email: info@brrrgrrr.com</p>
+                    <p>Phone: +1 (800) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                &copy; 2024 BrrrGrrr. All Rights Reserved.
+            </div>
+        </div>
+        <!-- <link rel="stylesheet" href="<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>"> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <script>
+            // Function to display burger details in the modal
+            function showBurgerDetails(name, ingredients, price) {
+                // Set burger details in the modal
+                document.getElementById('burgerName').innerText = name;
+                document.getElementById('burgerIngredients').innerText = ingredients;
+                document.getElementById('burgerPrice').innerText = 'Price: $' + price.toFixed(2);
+
+                // Show the modal
+                var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+                myModal.show();
+            }
+
+            // Function to handle order confirmation
+            function confirmOrder() {
+                alert("Your order for the burger has been placed successfully!");
+                // Redirect to another page or perform any additional actions
+                window.location.href = "thankyou.html"; // Redirect to a thank-you page or any desired page
+            }
+        
+        </script>
+        <script src="Home.js"></script>
+</body>
+
+</html>

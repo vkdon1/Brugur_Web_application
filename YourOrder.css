@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5a9bdd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the order page */
+
+h1 {
+  color: red;
+  background-color: rgb(152, 72, 72);
+}
